@@ -32,7 +32,7 @@ $(".btn").on('click', function (element) {
 })
 
 function playSound(name) {
-  var sound = new Audio('Sounds/'+ name +'.mp3');   
+  var sound = new Audio('Sounds/'+ name +'.mp3?raw=true');   
   sound.play();
 }
 
@@ -89,7 +89,7 @@ function checkAnswer() {
       nextSequence()},1000);
   }else{
     console.log('wrong');
-    var wrong = new Audio('Sounds/wrong.mp3');
+    var wrong = new Audio('Sounds/wrong.mp3?raw=true');
     wrong.play();
     gameOver();
     $('h1').text('Game Over, Press Any Key (or title) to Restart')
