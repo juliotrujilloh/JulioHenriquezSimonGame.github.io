@@ -32,7 +32,7 @@ $(".btn").on('click', function (element) {
 })
 
 function playSound(name) {
-  var sound = new Audio('https://github.com/juliotrujilloh/JulioHenriquezSimonGame.github.io/blob/main/Sounds/'+ name +'.mp3');   
+  var sound = new Audio('Sounds/'+ name +'.mp3');   
   sound.play();
 }
 
@@ -75,7 +75,7 @@ function checkAnswer() {
       userClickedPattern[i] === gamePattern[i];
       if (userClickedPattern[i] !== gamePattern[i]) {
         // console.log('wrong'); Used for testing;
-        var wrong = new Audio('https://github.com/juliotrujilloh/JulioHenriquezSimonGame.github.io/blob/main/Sounds/wrong.mp3');
+        var wrong = new Audio('Sounds/wrong.mp3');
         wrong.play();
         gameOver();
         $('h1').text('Game Over, Press Any Key (or title) to Restart')
@@ -89,7 +89,7 @@ function checkAnswer() {
       nextSequence()},1000);
   }else{
     console.log('wrong');
-    var wrong = new Audio('https://github.com/juliotrujilloh/JulioHenriquezSimonGame.github.io/blob/main/Sounds/wrong.mp3');
+    var wrong = new Audio('Sounds/wrong.mp3');
     wrong.play();
     gameOver();
     $('h1').text('Game Over, Press Any Key (or title) to Restart')
