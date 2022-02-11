@@ -75,7 +75,7 @@ function checkAnswer() {
       userClickedPattern[i] === gamePattern[i];
       if (userClickedPattern[i] !== gamePattern[i]) {
         // console.log('wrong'); Used for testing;
-        var wrong = new Audio('Sounds/wrong.mp3');
+        var wrong = new Audio('Sounds/wrong.mp3?raw=true');
         wrong.play();
         gameOver();
         $('h1').text('Game Over, Press Any Key (or title) to Restart')
