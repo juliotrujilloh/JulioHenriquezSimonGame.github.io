@@ -74,7 +74,7 @@ function checkAnswer() {
     for (var i = 0; i < userClickedPattern.length; i++) {
       userClickedPattern[i] === gamePattern[i];
       if (userClickedPattern[i] !== gamePattern[i]) {
-        // console.log('wrong'); Used for testing;
+        //console.log('wrong'); Used for testing;
         var wrong = new Audio('https://github.com/juliotrujilloh/JulioHenriquezSimonGame.github.io/blob/main/Sounds/wrong.mp3?raw=true');;
         wrong.play();
         gameOver();
@@ -88,7 +88,7 @@ function checkAnswer() {
     setTimeout(function(){
       nextSequence()},1000);
   }else{
-    console.log('wrong');
+    //console.log('wrong'); Used for testing;
     var wrong = new Audio('https://github.com/juliotrujilloh/JulioHenriquezSimonGame.github.io/blob/main/Sounds/wrong.mp3?raw=true');
     wrong.play();
     gameOver();
