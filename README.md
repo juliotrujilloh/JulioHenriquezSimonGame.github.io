@@ -1,4 +1,4 @@
-The classic "Simon Game":
+# The classic "Simon Game":
 
 *Click on the link to go to the game page
 
