@@ -6,5 +6,5 @@
 
 *Have fun!
 
-https://juliotrujilloh.github.io/JulioHenriquezSimonGame.github.io/
+https://juliotrujilloh.github.io/The-Simon-Game/
 
